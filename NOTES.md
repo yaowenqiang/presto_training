@@ -3,7 +3,7 @@ Teradata
 What is presto
 
 + Presto is an open source distributed SQL Query Engine
-  + Designed from the ground up for interactive analytics against a variety of data sources fo all size 
+  + Designed from the ground up for interactive analytics against a variety of data sources for all size 
   + Not a database
 + Initially developed by facebook
   + Open sourced in November 2031
@@ -601,11 +601,22 @@ Multiple Queues
   + All permits are held until the query completes execution
 
 
+unixodbc.org
+
+
+Web Ui url
+
+localhost:8080
 
 
 
 
+### presto hidden table and columns
 
+select * from tables$partitions
+select "$file_size" from tables
+select "$last_modified_date" from tables
+select "$path" from tables
 
 
 
