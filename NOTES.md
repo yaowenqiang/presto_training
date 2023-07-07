@@ -618,8 +618,12 @@ select "$file_size" from tables
 select "$last_modified_date" from tables
 select "$path" from tables
 
+# Hive Analyze
 
+hive> analyze table hive.ontimeflights compute statistics
+hive> analyze table hive.ontimeflights compute statistics for columns
 
+>show stats for hive.ontime.flights;
 
 
 
