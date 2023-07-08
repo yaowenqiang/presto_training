@@ -65,9 +65,13 @@ Presto plugins
 Query Presto
 
 > docker run -p 8080:8080 --name presto ahanaio/prestodb-sandbox
+
 > docker exec -it presto  presto-cli
+
 > presto> show catalogs;
+
 > docker exec -it presto  presto-cli  --catalog tpcds --schema sf10
+
 > teradata vm
 
 > show catalogs;
